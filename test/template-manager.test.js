@@ -30,9 +30,11 @@ describe('TemplateManager tests', () => {
       const content = '<h1>First Part</h1>';
       templates.add(templateName, content);
       const template = templates.get(templateName);
+      const templateElement = templates.templates.get(templateName);
 
       assert(templates.has(templateName));
-      assert.deepStrictEqual(template.innerHTML, content);
+      assert(template instanceof DocumentFragment);
+      assert.deepStrictEqual(templateElement.innerHTML, content);
       assert(templates.templatesTracker.has(templateName));
     });
   });
