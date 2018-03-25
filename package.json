@@ -1,0 +1,34 @@
+{
+  "name": "@electron-elements/utils",
+  "version": "1.0.0",
+  "description": "Utilities for building electron elements.",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint . --cache",
+    "lint-fix": "eslint . --cache --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:electron-elements/utils.git"
+  },
+  "keywords": [
+    "utils",
+    "electron-elements",
+    "custom elements",
+    "electron elements"
+  ],
+  "author": "cPhost <priyankp390@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/electron-elements/utils/issues"
+  },
+  "homepage": "https://github.com/electron-elements/utils#readme",
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
