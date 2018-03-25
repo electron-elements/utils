@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint . --cache",
-    "lint-fix": "eslint . --cache --fix"
+    "lint-fix": "eslint . --cache --fix",
+    "test": "karma start && eslint . --cache",
+    "unit-tests": "karma start"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,7 @@
   },
   "homepage": "https://github.com/electron-elements/utils#readme",
   "devDependencies": {
+    "electron": "^1.8.2",
     "eslint": "^4.18.2",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.9.0",
