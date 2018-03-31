@@ -14,8 +14,8 @@ const templates = new TemplateManager();
 
 ## `add(name, html[, data])`
 
-  * name (string) - the name of template you are adding
-  * html (string) - html of the template
+  * `name` (string) - the name of template you are adding
+  * `html` (string) - html of the template
   * data (object: optional) - the data for the template bindings
 
 You can add multiple templates, which allows you to have organized templates
@@ -29,11 +29,11 @@ templates.add('first-template', `
 `, data)
 ```
 
-## update(name, data[, noCache])
+## `update(name, data[, noCache])`
 
-  * name (string) - the name of the template to update
-  * data (object) - data to update the template bindings with
-  * noCache (boolean: optional, default: false) - weather to use cached data
+  * `name` (string) - the name of the template to update
+  * `data` (object) - data to update the template bindings with
+  * `noCache` (boolean: optional, default: false) - weather to use cached data
 
 This method can be used to update the templates. You can update a pre-existing
 template, use cached data so you don't have to provide old template binding data:
@@ -70,28 +70,28 @@ templates.update('second-template', { 'key-one': 'First Key' }, true);
 
 ## `has(name)`
 
-  * name (string) - name of the template
+  * `name` (string) - name of the template
 
 returns `true` if the template is added otherwise `false`.
 
 ## `get(name)`
  
-  * name (string) - name of the template
+  * `name` (string) - name of the template
 
 returns `DocumentFragment` of the template, internally `<template>` element is
 used to keep track and update the template so the DOM is pre-parsed.
 
 ## `updateTemplate(name, html[, data])`
 
-  * name (string) - the name of template
-  * html (string) - the html of template
-  * data (object: optional) - the data for template bindings
+  * `name` (string) - the name of template
+  * `html` (string) - the html of template
+  * `data` (object: optional) - the data for template bindings
 
 To update the whole template's html you can use this method.
 
 ## `remove(name)`
 
-  * name - the name of the template to remove
+  * `name` - the name of the template to remove
 
 Remove the templates from `TemplateManager`
 
