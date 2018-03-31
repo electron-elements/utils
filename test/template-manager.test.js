@@ -83,4 +83,12 @@ describe('TemplateManager tests', () => {
       assert.deepStrictEqual(el.innerHTML, '{{ a }}b');
     });
   });
+
+  describe('AttributeManager.getHTMLTemplate()', () => {
+    it('getHTMLTemplate works as expected', () => {
+      const templateHTML = '<div>Hello</div>';
+      templates.add('template-one', templateHTML);
+      assert.deepStrictEqual(templateHTML, templates.getHTMLTemplate('template-one'));
+    });
+  });
 });
