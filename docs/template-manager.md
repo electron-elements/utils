@@ -87,6 +87,18 @@ used to keep track and update the template so the DOM is pre-parsed.
 
 returns `string` of the html template you passed in.
 
+## `getCachedData(name)`
+ 
+  * `name` (string) - name of the template
+
+returns `object` of the cached data for template.
+
+## `deleteCachedData(name)`
+ 
+  * `name` (string) - name of the template
+
+Deletes the cached data for that template.
+
 ## `updateTemplate(name, html[, data])`
 
   * `name` (string) - the name of template

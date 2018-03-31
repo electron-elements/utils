@@ -84,11 +84,31 @@ describe('TemplateManager tests', () => {
     });
   });
 
-  describe('AttributeManager.getHTMLTemplate()', () => {
-    it('getHTMLTemplate works as expected', () => {
+  describe('test cached data methods', () => {
+    it('getHTMLTemplate() should works as expected', () => {
       const templateHTML = '<div>Hello</div>';
       templates.add('template-one', templateHTML);
       assert.deepStrictEqual(templateHTML, templates.getHTMLTemplate('template-one'));
+    });
+
+    it('getCachedData should work as expected', () => {
+      const data = {
+        name: 'cached-test'
+      };
+      templates.add('template-1', '{{ name }}', data);
+      assert.deepStrictEqual(data, templates.getCachedData('template-1'));
+    });
+
+    it('deleteCachedData should work as expected', () => {
+      const data = {
+        test: 'delete-cache-test'
+      };
+      templates.add('template-cache', '{{ test }}', data);
+
+      const templateEl = templates.templates.get('template-cache');
+      templates.deleteCachedData('template-cache');
+      assert.deepStrictEqual(templates.data.get('template-cache'), {});
+      assert.deepStrictEqual(templateEl.innerHTML, '{{ test }}');
     });
   });
 });
