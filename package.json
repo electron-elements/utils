@@ -2,7 +2,7 @@
   "name": "@electron-elements/utils",
   "version": "1.0.0",
   "description": "Utilities for building electron elements.",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "lint": "eslint . --cache",
     "lint-fix": "eslint . --cache --fix",
