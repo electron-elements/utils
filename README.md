@@ -1,4 +1,5 @@
  # utils
+[![npm](https://img.shields.io/npm/v/@electron-elements/utils.svg?style=flat-square)](https://npmjs.org/package/@electron-elements/utils)
 [![Travis](https://img.shields.io/travis/electron-elements/send-feedback.svg?style=flat-square)](https://travis-ci.org/electron-elements/send-feedback)
 [![Greenkeeper badge](https://img.shields.io/badge/Greenkeeper-enabled-blue.svg?style=flat-square)](https://greenkeeper.io/)
 
