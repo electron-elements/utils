@@ -5,12 +5,49 @@ declare namespace EEUtils {
   }
 
   class AttributeManager {
+    /*
+      The element that passed in the constructor
+    */
+    el: Node;
+
+    /*
+      The primitive object of attributes
+    */
+    attrs: object;
+
+    /*
+      change handler Map
+    */
+    changeHandlers: Map;
+
     constructor(el: Node);
+
+    /*
+      Get a value of an attribute
+    */
     get(attributeName: string): null | string;
+
+    /*
+      set an attribute on element
+    */
     set(attributeName: string, value?: string): undefined;
+
+    /*
+      Set up callback handler for specefic group of attributes
+    */
     onAttributeChange(attributes: string, opts: AttributeChangeOpts): any;
     onAttributeChange(attributes: Array<string>, opts: AttributeChangeOpts): any;
+
+    /*
+      Get all the change handler associated with
+      a specefic attribute.
+    */
     getChangeHandlers(attr: string): Function[];
+
+    /*
+      Create a bridge that will call attribute change
+      callback if the property is set on the element.
+    */
     createAttrToPropBridge(attr: string): Function[];
   }
 
