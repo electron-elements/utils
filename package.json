@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Utilities for building electron elements.",
   "main": "lib/index.js",
+  "types": "lib/utils.d.ts",
   "scripts": {
     "lint": "eslint . --cache",
     "lint-fix": "eslint . --cache --fix",
