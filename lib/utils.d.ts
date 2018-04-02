@@ -1,4 +1,4 @@
-declare namespace ElectronElementsUtils {
+declare namespace EEUtils {
   interface AttributeChangeOpts {
     addDataAttrs?: boolean,
     handler: Function
@@ -26,4 +26,8 @@ declare namespace ElectronElementsUtils {
     updateTemplate(name: string, html: string, data?: object): void;
     remove(name: string): void;
   }
+}
+
+declare module '@electron-elements/utils' {
+  export = EEUtils;
 }
