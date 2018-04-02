@@ -17,6 +17,10 @@ class CustomElement extends HTMLElement {
 }
 ```
 
+## `attrs`
+
+Returns `object` of all the attributes.
+
 ## `get(attributeName)`
 
   * `attributeName` (string) - the name of attribute to get
