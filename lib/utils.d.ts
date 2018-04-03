@@ -27,7 +27,7 @@ declare namespace EEUtils {
     /*
       change handler Map
     */
-    changeHandlers: Map;
+    changeHandlers: Map<Array<string>, Function>;
 
     constructor(el: Node);
 
