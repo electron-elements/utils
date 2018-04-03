@@ -1,6 +1,15 @@
 declare namespace EEUtils {
   interface AttributeChangeOpts {
+    /*
+      Weather to add `data-` attributes for
+      the attributes passed in.
+    */
     addDataAttrs?: boolean,
+
+    /*
+      The handler that would be called when
+      and attribute you want to observe is changed
+    */
     handler: Function
   }
 
