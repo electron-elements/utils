@@ -44,8 +44,7 @@ declare namespace EEUtils {
     /*
       Set up callback handler for specefic group of attributes
     */
-    onAttributeChange(attributes: string, opts: AttributeChangeOpts): any;
-    onAttributeChange(attributes: Array<string>, opts: AttributeChangeOpts): any;
+    onAttributeChange(attributes: string|Array<string>, opts: AttributeChangeOpts): any;
 
     /*
       Get all the change handler associated with
