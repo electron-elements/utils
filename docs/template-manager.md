@@ -1,14 +1,14 @@
 # `TemplateManager`
 
-`TemplateManager` can be used easily when working with custom elements.
-It was created keeping in mind the functionality that was used in first
+`TemplateManager` can be used when working with custom elements.
+It was created while keeping in mind the functionality that was used in first
 [electron-element](https://github.com/electron-elements/electron-elements#electron-elements)
 [send-feedback](https://github.com/electron-elements/send-feedback). It provides
 basic templating utilities.
 
-Through this docs `templates` will be:
+Throughout this docs `templates` will be:
 ```javascript
-const { TemplateManager } = require('../lib');
+const { TemplateManager } = require('@electron-elements/utils');
 const templates = new TemplateManager();
 ```
 
