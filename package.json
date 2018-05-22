@@ -30,14 +30,14 @@
     "electron": "^2.0.2",
     "eslint": "^4.18.2",
     "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "karma": "^2.0.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "karma": "^2.0.2",
     "karma-electron": "^6.0.0",
     "karma-mocha": "^1.3.0",
     "karma-mocha-reporter": "^2.2.5",
-    "mocha": "^5.0.4"
+    "mocha": "^5.2.0"
   }
 }
